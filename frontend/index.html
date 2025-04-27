@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capacitor Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="optimizer-form">
+    <h2>Configuration</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <label for="target">Target Capacitance (F):</label>
+            <input type="number" id="target" name="target" step="0.001" value="75.0" required>
+        </div>
+        <div class="grid-item">
+            <label for="branches">Number of Branches:</label>
+            <input type="number" id="branches" name="branches" min="1" value="3" required>
+        </div>
+         <div class="grid-item">
+            <label for="fixed">Fixed Capacitor Value (F):</label>
+            <input type="number" id="fixed" name="fixed" step="0.001" value="2.5" required>
+        </div>
+         <div class="grid-item">
+            <label for="max_parallel">Max Parallel C per Branch:</label>
+            <input type="number" id="max_parallel" name="max_parallel" min="0" value="20" required>
+        </div>
+    </div> <label for="available">Available Capacitors (comma-separated F):</label>
+    <input type="text" id="available" name="available" value="5.0,10.0,50.0" placeholder="Example: 4,6,100" required>
+
+    <button type="submit">Find Optimal Configuration</button>
+</form>
+
+<pre id="result">Submit the form to see the results here.</pre>
+
+<script src="script.js"></script>
+</body>
+</html>
