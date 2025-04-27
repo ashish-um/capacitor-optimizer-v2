@@ -7,8 +7,8 @@ v1 prototype:-
 https://ashish-um.github.io/capacitor-optimizer/
 
 ## version 2:
-running cpp on bare metal utilizing all cpu cores for faster performance,
-converting cpp response to json output and paring it in fastapi and client side  
+running cpp on bare metal, utilizing all cpu cores for faster performance,
+converting cpp response to json output and parsing it in fastapi and client side  
 > (cpp on bare metal) <----> [ fastapi ] <----> (client)
 
 ### Setup:
